@@ -33,6 +33,7 @@
 		float: none;
 		margin: 0;
 		padding: 30% 0 10%;
+		word-break: break-all;
 		text-align: center;
 		width: 100%;
 	}
