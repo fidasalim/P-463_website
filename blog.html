@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Introduction</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+	<script src="js/mobile.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div>
+				<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+				<ul id="navigation">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li class="menu">
+						<a href="intro.html">Introduction</a>
+						<ul class="secondary">
+							<li>
+								<a href="singlepost.html">Jets</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu selected">
+						<a href="blog.html">Methods</a>
+						<ul class="primary">
+							<li>
+								<a href="page_1.html">Theory</a>
+							</li>
+							<li>
+								<a href="proj1.html">Experimental</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu">
+						<a href="projects.html">Results</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="body">
+			<div class="header">
+				<div>
+					<h1>Theory</h1>
+					<p>Here after we will be discussing in details about the jets in AGN. </p>
+					<div class="article">
+						<ul>
+							<li>
+								<h1>Basic Jet Structure</h1>
+								<b style="font-size: 20px;color : #a3a3a3;font-family: audiowide-regular-webfont;">Jet Head:</b>
+								<p>Due to impact with the stationary ambient gas, 
+									a supersonic jet that is propagating into it will develop a double shock pattern at its head (also known as the working surface). 
+									While the impacted ambient material is accelerated by a forward bow shaped shock, the beam outflow is decelerated in a jet shock 
+									or Mach disk. By balancing the momentum flux produced by the ambient medium at the bow shock with the momentum flux produced by the 
+									jet material at the jet head, the velocity of advance of the bow shock may be calculated for highly supersonic flows: $$v_{bs} = v_{j}[1+(\eta\alpha)^{-\frac{1}{2}}]^{-1}$$ where \(v_{j}\) is the jet velocity, 
+									\(v_{bs}\) is the velocity of the bow shock, \(\eta = \eta_{j}/\eta_{a}\) is the ratio of the jet number density to the ambient number density and \(\alpha= (R_{j}/R_{h})^{2}\), where \(R_{j}\) is the raduis of the jet beam and 
+									\(R_{h}\) is the radius of the jet head. <br>
+									AGN are believed to have low density (\(\eta \ll 1 \)) and \(v_{bs} \ll v_{j}\) and jet material is deaccelerated aroung jet forming a cacoon of shock-heated waste material. 
+									The shock-heated waste material forms a cocoon around the jet as a result of the high-pressure, shocked gas driving a flow backward around it.
+									
+
+								</p>
+							</li>
+							<li>
+								<h1>Basics Equations in Magnetohydrodynamics</h1>
+								<p>The ideal magnetohydrodynamic (MHD) equations are the conservation equations that can describe the 
+									dynamical evolution of a magnetized nonrelativistic flow in the absence of dissipation effects:
+									$$\frac{d\rho}{dt} = -\rho\nabla.\vec{v} $$
+									$$\frac{d\vec{v}}{dt} = \frac{\nabla p}{\rho}+\frac{1}{4\pi\rho}(\nabla \times B)\times B$$
+									$$\frac{du}{dt}=-\frac{p}{\rho}(\nabla.\vec{v})-L$$
+									$$\frac{dB}{dt} = -B(\nabla.\vec{v})+(B.\nabla)\vec{v}$$
+									where \(\rho\) is the density; \(B\) is the magnetic field;\(u\) is the specififc internal energy, 
+									\(L\) is the radiative cooling effect, \(p\) is the gas pressure and \(\vec{v}\) is the flow velocity.
+									<br>The jet velocity, the Mach number, and the ratio of the jet to ambient density are the minimum three variables 
+									that must be taken into account by models that account for the jet's overall dynamics. In some cases, it is possible 
+									to assume that the bulk kinetic energy density in the jet dominates on the magnetic energy, and in those cases, the general 
+									behavior of the jet propagation can be captured by a pure hydrodynamic model. The magnetic field intensity is another important 
+									parameter for jet modeling.
+								</p>
+							</li>
+							<li>
+								<h1>Astrophysical Jets Theories</h1>
+								<p> 
+									Two conflicting elements, the speed along the axis and the speed at which waves propagate through the jet, determine the expansion of a jet as well as many other aspects.
+									This proportion of speeds is therefore essential to all jet models. An analysis of the MHD flow equations' linear perturbations is done to estimate how quickly signals might spread.
+									The formula for sound waves of speed is obtained as $$c_{s} = \sqrt{\frac{dp}{d\rho}}$$
+									If we consider adiabatic flow of fluid, i.e, all sources and sink are ingnored, then the sound speed is 
+									$$c_{j} = \sqrt{\frac{\gamma p}{\rho}}$$ where in adiabatic law \(p = \rho^{\gamma}\).
+								</p>
+								<p>
+									<b style="font-size: 20px;color : #a3a3a3;font-family: audiowide-regular-webfont;">Alfven Speed:</b>
+									Non-dispersive waves propagate along field lines at the Alfven speed, \(v_{A}\), or at a speed, \(v_{A} cos{\phi}\), when they are at an angle to the field direction.
+									 Although the fluid is moved against both the wave direction and the field direction, there is no corresponding compression. Then, $$v_{A}=\frac{B}{\sqrt{4\pi\rho}}$$
+								</p>
+								<p>
+									<b style="font-size: 20px;color : #a3a3a3;font-family: audiowide-regular-webfont;">Mach Number:</b>
+									Rotational, gravitational, or solar energy are the energy sources for various jet classes. Before becoming the bulk flow of the jets, this energy is transformed into particle, thermal, or magnetic energy.
+									If a uniform jet flow is considered, the ratio of bulk kinetic flow energy \(E_{k}\), to thermal energy \(E_{T}\), is proportional to Mach number, \(M\), squared. 
+									Then $$M^{2} = \frac{v_{j}^{2}}{c_{s}^{2}} = \frac{2}{\gamma(\gamma -1)} \frac{E_{K}}{E_{T}}$$
+							
+								</p>
+							</li>
+							<li>
+								<b style="font-size: 20px;color : #a3a3a3;font-family: audiowide-regular-webfont;">Steady Jets:</b>
+								<p>
+									According to Euler's equation, \(\partial v/\partial t = 0\), then, energy conservation per unit mass can be obtained as, 
+									$$(\nabla \Phi)^{2} + \frac{2\gamma}{\gamma -1}\frac{p}{\rho}+ 2(\nabla \Phi_{G})^{2} = U^{2}$$ where \(\nabla \Phi\) is the jet velocity in terms of velocity potential, \(U\) is the Bernoulli's constant and 
+									\(\Phi_{G}\) is the gravitational potential.  
+								</p>
+								<a href="page_1.html" class="more">Read More</a>
+							</li>
+						</ul>
+					</div>
+					<div class="sidebar">
+						<ul>
+							<li>
+								<a href="blog.html"><img src="images/jet head.jpg" class="center" alt=""></a>
+								<span style="color:black">The working surface, the beam, and the cocoon are the fundamental components of a jet's structure.</span>
+							</li>
+							<li>
+								<a href="https://hubblesite.org/contents/media/images/2012/47/3113-Image.html"><img src="images/HERCULES A.jpg" alt="" ></a>
+								<span style="color:black">Hercules A</span>
+							
+							</li>
+							<li>
+								<a href="https://astronomynow.com/2016/10/25/hotspots-in-cygnus-a-an-active-galactic-nucleus/"><img src="images/CygnusA.jpg" alt=""></a>
+								<span style="color:black">Cygnus A</span>
+							
+							</li>
+							<li>
+								<a href="https://en.wikipedia.org/wiki/Centaurus_A"><img src="images/centaurusA.jpg" alt="" ></a>
+								<span style="color:black">CentaurusA</span>
+							
+							</li>
+							<li>
+								<a href="https://esahubble.org/images/opo9943b/"><img src="images/M87.jpg" alt="" ></a>
+								<span style="color:black">M87</span>
+							
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

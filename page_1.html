@@ -1,0 +1,121 @@
+<!doctype html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Theoretical Explaination</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+	<script src="js/mobile.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div>
+				<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+				<ul id="navigation">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li class="menu">
+						<a href="intro.html">Introduction</a>
+						<ul class="primary">
+							<li>
+								<a href="singlepost.html">Jets</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu selected">
+						<a href="blog.html">Methods</a>
+						<ul class="secondary">
+							<li>
+								<a href="page_1.html">Theory</a>
+							</li>
+							<li>
+								<a href="proj1.html">Experimental</a>
+							</li>
+						</ul>
+					</li>
+					</li>
+					<li class="menu">
+						<a href="projects.html">Results</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="body">
+			<div class="header">
+				<div>
+					<h1>Theory </h1>
+					<div class="article">
+						<li>
+								<p>
+									<b style="font-size: 20px;color : #a3a3a3;font-family: audiowide-regular-webfont;">Streamlines in Rotating MHD Flow:</b><br>
+									We are considering a non-dimentional form of equation with length and time scale corresponds to the radius, \(R_{x}\) and inverse angular frequency \(1/\Omega_{x}\) at a particular location where magnetic lines are rooted.
+									In a rotated-frame flow, if we consider a non-dimensional cylindrical coordinate \( (\omega,\psi,z ) \) and velocity \(\vec{u} = \vec{v}/(R_{x}\Omega_{x})\). <br>
+									In mass conservation \(\dot{\nabla }{\rho \vec{v}} = 0\), in stream function \(\phi(\omega,z)\), with axial symmetry, the mass conservation equation is $$\rho u_{\omega} = \frac{1}{\omega}\frac{\partial \phi}{\partial z}$$
+									$$\rho u_{z} = \frac{1}{\omega}\frac{\partial \phi}{\partial \omega}$$ This condition ensures the plane of magnetic field \(\vec{B}\) and velocity \( \vec{u} \) are aligned providing magnetic field is proportional to mass flux, ie,
+									\(\vec{B}=\beta \rho \vec{u}\). 
+								</p>
+								<p>
+									If the three components of the momentum is provided, then the steady-flow Euler MHD equation in a rotatin gframe will include coriolis and centripetal terms giving:
+									$$\nabla(\frac{1}{2}\dot{\vec{u}}{\vec{u}})-\vec{u}\times(2e_{z}+\nabla\times\vec{u}) = -\frac{\epsilon^{2}}{\rho}\nabla\rho + \frac{1}{\rho}(\nabla\times \vec{B})\times\vec{B}-\nabla\mathcal{V}_{eff}$$
+									for an isothermal flow with \(\epsilon = \frac{c_{i}}{R_{x}\Omega_{x}}\) with \(M_{A}^{2} =\frac{1}{\rho\beta^{2}}\) and \(\mathcal{V}_{eff}\) is the effective centrifugal potential that is $$\mathcal{V}_{eff} = \frac{3}{2}-\frac{\omega^{2}}{2}-\frac{1}{(\omega^{2}+z^{2})^{1/2}}$$
+								</p>
+								<p>
+									Considering various compenents of velocitym we will get some physical conditions. 
+									If toroidal component is treated, the angular momentum of the gas is $$\omega(1-\beta^{2}\rho)u_{\psi}+\beta^{2}\rho\omega^{2} = J(\Phi)$$ provides the specific angular momentum along streamline.<br>
+									The Bernoulli equation along streamlines is obtained as:$$\frac{1}{2}u^{2}+\mathcal{V}_{eff}+\epsilon^{2}ln{\rho} = H(\Phi)$$ The momentum balance in the direction perpendicular to the poloidal field lines is described in the third part of the Euler equation.
+								</p>
+								<p>
+									<b style="font-size: 20px;color : #a3a3a3;font-family: audiowide-regular-webfont;">Grad-Shafranov Equation: </b>	
+									It is an equation that is analytically integrated but y describe the main properties of active compact astrophysical sources.In the context of ideal magnetohydrodynamics, this method describes axisymmetric stationary flows.
+									$$\frac{1}{\omega}\frac{\partial}{\partial \omega}(\omega \mathcal{A}\frac{\partial \Phi}{\partial \omega})+\frac{\partial \Phi}{\partial z}(\mathcal{A}\frac{\partial \Phi}{\partial z}) = \mathcal{Q}$$
+									where \(\mathcal{A}\) is the Alfven discriminant which is $$\mathcal{A} = \frac{\beta^{2}\rho - 1}{\omega^{2}\rho} = \frac{M_{A}^{-1}-1}{\omega^{2}\rho}$$
+									The concepts used in  \(\mathcal{Q}\) to characterize the toroidal flow, effective gradient in gas pressure, and field effects are ultimately what decide how successfully the jet is collimated:
+									$$\mathcal{Q} = \rho[\rho u^{2}\beta\beta^{'}+\frac{u_{\psi}}{\omega}J^{'}(\Phi)-H^{'}(\Phi)] $$
+									An inertial term connected to poloidal motions and a magnetic tension term connected to the poloidal field make up the left side of the Grad-Shafranov equation. All other centrifugal terms, magnetic pressure gradients, and hoop stresses are on the right.
+								</p>
+						</li>
+						<li>
+							<p>
+								Astrophysical jets must overcome three obstacles: launch, acceleration, and collision. Thermal, radiative, and magnetic forcing from stars and accretion discs can easily launch and accelerate winds. Nuclear fusion, external heating, mass infall, or collapse all release enormous amounts of energy. A portion of the energy is converted into released gas, radiation, and magnetic fields after expanding into the environment.
+								It changes into radially directed kinetic energy during transport. However, the discovery of jets suggests that the hypothesis is much more nuanced than just proving the existence of a driver.
+							</p>
+							<p>
+								<b style="font-size: 20px;color : #a3a3a3;font-family: audiowide-regular-webfont;">Hydrodynamic Methods - Nozzle: </b><br>
+								The de Laval nozzle mechanism is an example of a jet creation principle that is entirely hydrodynamic. In this configuration, a single supersonic jet is produced by injecting high-pressure compressible gas into a nozzle, or a designed tube that is pinched in the middle. The gas loses pressure as it travels down the tube more quickly. The constriction, where the nozzle is tightest, is where the flow turns transonic with the proper design. The pressure drops and accelerates even more as the nozzle expands. Heat energy is transformed into directed kinetic energy by the nozzle. Its functionality depends on how gases moving at subsonic and supersonic speeds behave differently.
+								The stability of the hollow and the throats is a significant flaw in the model. Large chunks of hot gas are frequently removed from the walls by the instability, which subsequently messes up the smooth cavity flow.
+							</p>
+						</li>
+						<li>
+							<p><b style="font-size: 20px;color : #a3a3a3;font-family: audiowide-regular-webfont;">Magnetic Nozzle Effect </b><br>
+								In general relativisitc MHD, it has been found that the flows with generalised parabolic geometry, where \(z \propto R^{\epsilon}\) in cylindrical coordinate (R,z). Here \(R\) is the width of the jet and \(z\) is the distance to the apex. This is known as nozzle effect. <br>
+								M-87 help to study a relativistic outflow with the highest angular resolution of \(r_{g}\), the gravitational radius of black hole. In axisymetric MHD jet, the magnetic stream fumction \(\Psi(r,\theta)\) can be obtained as,
+								$$\Psi(r,\theta) = (\frac{r}{r_{H}})^{\kappa}(1-cos{\theta})$$ where \(r_{H}\) is the radius of black hole horizon. 
+								<br>
+								From previous works, it has been analytically obtained that, if \(\kappa = 0\), the asymptotic streamline gives the shape  \(z\propto R\), whereas if \(\kappa = 1\), the streamline has a parabolic shape \(z\propto R^{2}\) at \(R>r_{g}\).
+							
+							</p>
+							<a href="proj1.html" class="more">Read More</a>
+						</li>
+							
+                    </div>
+					<div class="sidebar">
+						<ul>
+							<li>
+								<a href="page_1.html"><img src="images/graph2.jpg" alt=""></a>
+								<h2>Outermost streamlines of the steady axisymmetric solution of the jet</h2>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
